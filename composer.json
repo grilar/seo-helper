@@ -1,0 +1,25 @@
+{
+    "name": "grilar/seo-helper",
+    "description": "SEO helper package",
+    "type": "package",
+	"license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Grilar\\SeoHelper\\": "src"
+        }
+    },
+    "require": {
+        "grilar/platform": "*@dev",
+        "grilar/theme": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Grilar\\SeoHelper\\Providers\\SeoHelperServiceProvider"
+            ],
+            "aliases": {
+                "SeoHelper": "Grilar\\SeoHelper\\Facades\\SeoHelper"
+            }
+        }
+    }
+}
